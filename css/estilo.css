@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2? family= Heebo:wght@300 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+
+.cabeza {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.icon {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.logo1 {
+  width: 210px;
+  height: 147px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgb(0, 11, 113);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+}
+
+.bocha:hover {
+  transform: scale(120%);
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.gustos {
+  text-align: center;
+  font-size: x-large;
+}
+
+.vainilla {
+  grid-area: vainilla;
+}
+
+.flanddl {
+  grid-area: flan;
+}
+
+.dulcedeleche {
+  grid-area: dl;
+}
+
+.dlg {
+  grid-area: dlg;
+}
+
+.chocolate {
+  grid-area: choco;
+}
+
+.tramontana {
+  grid-area: tramontana;
+}
+
+.cookies {
+  grid-area: cookies;
+}
+
+.cremadelcielo {
+  grid-area: cremacielo;
+}
+
+.mascarpone {
+  grid-area: mascarpone;
+}
+
+.frutilla {
+  grid-area: frutilla;
+}
+
+.bananita {
+  grid-area: bananita;
+}
+
+.limon {
+  grid-area: limon;
+}
+
+.gustos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.gustos {
+  margin-top: 40px;
+  display: grid;
+  grid-template-areas: "vainilla flan dl" "dlg choco tramontana " "cookies cremacielo mascarpone" "frutilla bananita limon";
+  gap: 20px;
+}
+
+.bocha {
+  padding: 20px;
+}
+
+.flexgustos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.foto1 {
+  grid-area: "foto1";
+}
+
+.foto2 {
+  grid-area: "foto2";
+}
+
+.heladeria {
+  margin-top: 65px;
+  background-color: rgb(0, 11, 113);
+  padding: 25px;
+  color: white;
+  grid-template-areas: "foto1" "foto2";
+}
+
+.heladeria-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.texto1 {
+  padding: 20px;
+}
+
+.suscripcion {
+  color: rgb(0, 11, 113);
+  background-color: white;
+  padding: 40px 80px 40px 80px;
+  text-align: center;
+  font-size: 100px;
+}
+
+.division {
+  width: 400px;
+  background-color: rgb(0, 11, 113);
+  padding: 30px;
+  margin: auto;
+  border: solid rgb(132, 132, 132);
+  margin-top: 50px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px black;
+}
+
+.consulta {
+  width: 100%;
+  padding-bottom: 100px;
+  border-radius: 5px;
+}
+
+.registro {
+  font-size: x-large;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.control {
+  width: 100%;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.video-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 946px) {
+  .gustos {
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: "vainilla flan " "dl dlg" "choco tramontana " "cookies cremacielo" "mascarpone frutilla" "bananita limon";
+    justify-items: stretch;
+    gap: 20px;
+  }
+  .bocha {
+    width: 75%;
+  }
+  .flexgustos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .video-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .division {
+    padding: 30px;
+  }
+  .suscripcion {
+    padding: 50px;
+    font-size: 75px;
+  }
+}
+@media (max-width: 715px) {
+  .gustos {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "vainilla" "flan " "dl" "dlg" "choco" "tramontana " "cookies" "cremacielo" "mascarpone" "frutilla" "bananita" "limon";
+    gap: 20px;
+  }
+  .flexgustos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .video-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .icon {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .heladeria {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 5px 25px 5px;
+    color: white;
+  }
+  .texto1 {
+    padding: 10px;
+  }
+  .foto1 {
+    width: 75%;
+  }
+  .division {
+    padding: 20px;
+  }
+  .suscripcion {
+    padding: 30px;
+    font-size: 60px;
+  }
+}

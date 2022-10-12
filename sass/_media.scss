@@ -1,0 +1,107 @@
+@media (max-width: 946px) {
+  .gustos {
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: "vainilla flan "
+      "dl dlg"
+      "choco tramontana "
+      "cookies cremacielo"
+      "mascarpone frutilla"
+      "bananita limon";
+    justify-items: stretch;
+    gap: 20px;
+  }
+
+  .bocha {
+    width: 75%;
+  }
+
+  .flexgustos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .video-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .division {
+    padding: 30px;
+  }
+
+  .suscripcion {
+    padding: 50px;
+    font-size: 75px;
+  }
+}
+
+@media (max-width:715px) {
+  .gustos {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+      "vainilla"
+      "flan "
+      "dl"
+      "dlg"
+      "choco"
+      "tramontana "
+      "cookies"
+      "cremacielo"
+      "mascarpone"
+      "frutilla"
+      "bananita"
+      "limon";
+    gap: 20px;
+    }
+
+    .flexgustos {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+  }
+  
+    .video-container {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .icon {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    .heladeria {
+      margin-top: 65px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 25px 5px 25px 5px;
+      color: white;
+    }
+
+    .texto1 {
+      padding: 10px;
+    }
+
+    .foto1 {
+      width: 75%;
+    }
+
+    .division {
+      padding: 20px;
+    }
+
+    .suscripcion {
+      padding: 30px;
+      font-size: 60px;
+    }
+}

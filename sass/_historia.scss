@@ -1,0 +1,26 @@
+@import "vars";
+.foto1{
+    grid-area: "foto1";
+}
+.foto2{
+    grid-area: "foto2";
+}
+.heladeria {
+    margin-top: 65px;
+    background-color: $blue;
+    padding: 25px;
+    color: white;
+    grid-template-areas: 
+    "foto1"
+    "foto2";
+}
+.heladeria-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.texto1 {
+    padding: 20px;
+}

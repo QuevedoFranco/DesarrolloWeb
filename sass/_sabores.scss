@@ -1,0 +1,81 @@
+.bocha:hover {
+    transform: scale(120%);
+    transition-property: all;
+    transition-duration: 2s;
+}
+.gustos {
+    text-align: center;
+    font-size: x-large;
+}
+.vainilla {
+    grid-area: vainilla;
+}
+
+.flanddl {
+    grid-area: flan;
+}
+
+.dulcedeleche {
+    grid-area: dl;
+}
+
+.dlg {
+    grid-area: dlg;
+}
+
+.chocolate {
+    grid-area: choco;
+}
+
+.tramontana {
+    grid-area: tramontana;
+}
+
+.cookies {
+    grid-area: cookies;
+}
+
+.cremadelcielo {
+    grid-area: cremacielo;
+}
+
+.mascarpone {
+    grid-area: mascarpone;
+}
+
+.frutilla {
+    grid-area: frutilla;
+}
+
+.bananita {
+    grid-area: bananita;
+}
+
+.limon {
+    grid-area: limon;
+}
+.gustos-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.gustos {
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas:
+        "vainilla flan dl"
+        "dlg choco tramontana "
+        "cookies cremacielo mascarpone"
+        "frutilla bananita limon";
+    gap: 20px;
+}
+.bocha{
+    padding: 20px;
+}
+
+
+.flexgustos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
