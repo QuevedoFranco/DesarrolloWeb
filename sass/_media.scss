@@ -1,5 +1,13 @@
-@media (max-width: 946px) {
+@media (max-width: 1009px) {
+  .navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
   .gustos {
+    width: 95%;
+    margin: auto;
     margin-top: 40px;
     display: grid;
     grid-template-areas: "vainilla flan "
@@ -8,40 +16,37 @@
       "cookies cremacielo"
       "mascarpone frutilla"
       "bananita limon";
-    justify-items: stretch;
+    justify-items: center;
     gap: 20px;
+    .sabor{
+      width: 80%;
+    }
   }
-
-  .bocha {
-    width: 75%;
-  }
-
   .flexgustos {
     display: flex;
     flex-direction: column;
     align-content: center;
   }
-
   .video-container {
     margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
   .division {
     padding: 30px;
   }
 
-  .suscripcion {
-    padding: 50px;
-    font-size: 75px;
-  }
 }
-
 @media (max-width:715px) {
+  .navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
   .gustos {
-    margin-top: 50px;
+    margin: auto;
     display: grid;
     justify-content: center;
     grid-template-areas:
@@ -65,20 +70,16 @@
       flex-direction: column;
       align-content: center;
   }
-  
     .video-container {
       margin: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
     }
-
     .icon {
       padding-left: 35px;
       padding-right: 35px;
     }
-
     .heladeria {
       margin-top: 65px;
       display: flex;
@@ -87,14 +88,10 @@
       padding: 25px 5px 25px 5px;
       color: white;
     }
-
     .texto1 {
       padding: 10px;
     }
 
-    .foto1 {
-      width: 75%;
-    }
 
     .division {
       padding: 20px;

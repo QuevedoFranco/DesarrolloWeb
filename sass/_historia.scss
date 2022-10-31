@@ -1,26 +1,69 @@
-@import "vars";
-.foto1{
-    grid-area: "foto1";
+.historia{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
 }
-.foto2{
-    grid-area: "foto2";
+.maptitle{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
-.heladeria {
-    margin-top: 65px;
-    background-color: $blue;
-    padding: 25px;
-    color: white;
-    grid-template-areas: 
-    "foto1"
-    "foto2";
+.title2{
+    margin-top: 40px;
+    font-size: 40px;
+    color: $blue;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.map{
+    width: 80%;
+    border-radius: 40px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.456);
 }
 .heladeria-container{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
     gap: 30px;
 }
-
+.heladeria-container2{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+.foto1{
+    width: 40%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+}
+.foto2{
+    width: 40%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+}
+.text{
+    width: 50%;
+    text-align: center;
+    font-size: x-large;
+    margin: 20px;
+    color: $blue;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.title{
+    margin-left: 30px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    font-size: 30px;
+    color: $blue;
+}
 .texto1 {
     padding: 20px;
+    color: $blue;
 }
+

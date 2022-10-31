@@ -2,13 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 body {
   background-color: rgb(255, 255, 255);
   min-height: 100vh;
+  position: relative;
+  padding-bottom: 300px;
+  background-image: url(../img/pipfondo.png);
 }
 
 .cabeza {
@@ -17,6 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(35, 60, 130);
 }
 
 .redes {
@@ -37,12 +40,19 @@ body {
 footer {
   width: 100%;
   margin-top: 30px;
-  background-color: rgb(0, 11, 113);
+  background-color: rgb(35, 60, 130);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   position: absolute;
+  bottom: 0;
+  width: 100%;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .bocha:hover {
@@ -107,7 +117,11 @@ footer {
 .gustos-container {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 100px;
   gap: 30px;
+  background-color: rgba(235, 235, 235, 0.496);
 }
 
 .gustos {
@@ -118,96 +132,304 @@ footer {
 }
 
 .bocha {
-  padding: 20px;
+  padding: 10px;
 }
 
 .flexgustos {
   display: flex;
   flex-direction: column;
   align-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: rgb(35, 60, 130);
 }
 
-.foto1 {
-  grid-area: "foto1";
+.historia {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
 }
 
-.foto2 {
-  grid-area: "foto2";
+.maptitle {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
-.heladeria {
-  margin-top: 65px;
-  background-color: rgb(0, 11, 113);
-  padding: 25px;
-  color: white;
-  grid-template-areas: "foto1" "foto2";
+.title2 {
+  margin-top: 40px;
+  font-size: 40px;
+  color: rgb(35, 60, 130);
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+
+.map {
+  width: 80%;
+  border-radius: 40px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.456);
 }
 
 .heladeria-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
   gap: 30px;
+}
+
+.heladeria-container2 {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+
+.foto1 {
+  width: 40%;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto2 {
+  width: 40%;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  width: 50%;
+  text-align: center;
+  font-size: x-large;
+  margin: 20px;
+  color: rgb(35, 60, 130);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.title {
+  margin-left: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  color: rgb(35, 60, 130);
 }
 
 .texto1 {
   padding: 20px;
+  color: rgb(35, 60, 130);
+}
+
+.contactocontainer {
+  display: flex;
 }
 
 .suscripcion {
-  color: rgb(0, 11, 113);
-  background-color: white;
-  padding: 40px 80px 40px 80px;
+  color: rgb(35, 60, 130);
   text-align: center;
   font-size: 100px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.division {
-  width: 400px;
-  background-color: rgb(0, 11, 113);
+.contacto1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-size: x-large;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+}
+
+.p3 {
+  font-size: 50px;
+}
+
+.p4 {
+  font-size: 29px;
+}
+
+.contacto2 {
+  width: 45%;
   padding: 30px;
   margin: auto;
-  border: solid rgb(132, 132, 132);
-  margin-top: 50px;
-  border-radius: 8px;
-  box-shadow: 5px 5px 15px black;
 }
 
 .consulta {
   width: 100%;
   padding-bottom: 100px;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(156, 156, 156, 0.198);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.456);
 }
 
 .registro {
   font-size: x-large;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .control {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   padding-bottom: 10px;
+  border: none;
+  background-color: rgba(156, 156, 156, 0.198);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.456);
+}
+
+.enviar {
+  width: 100%;
+  height: 2em;
+  color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(35, 60, 130);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.456);
+}
+
+.imgc {
+  border-radius: 50px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.456);
 }
 
 .video-container {
-  margin: 10px;
+  margin: 20px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-@media (max-width: 946px) {
+.video {
+  border-radius: 40px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.h2 {
+  padding-bottom: 15px;
+  padding-left: 15px;
+  color: rgb(35, 60, 130);
+  text-shadow: 2px 2px 2px rgba(135, 135, 135, 0.365);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.slider {
+  width: 98%;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 50px;
+  border-radius: 40px;
+  background-color: rgb(242, 242, 242);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider ul {
+  display: flex;
+  text-align: center;
+  padding: 0;
+  width: 350%;
+  -webkit-animation: cambio 30s infinite;
+          animation: cambio 30s infinite;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 60%;
+}
+
+@-webkit-keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -250%;
+  }
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -250%;
+  }
+}
+@-webkit-keyframes cambio2 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+@keyframes cambio2 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+.slider2 {
+  width: 98%;
+  height: 50%;
+  margin: auto;
+  margin-top: 40px;
+  overflow: hidden;
+  padding-top: 50px;
+  border-radius: 40px;
+  background-color: rgb(242, 242, 242);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ul1 {
+  display: flex;
+  text-align: center;
+  padding: 0;
+  width: 200%;
+  -webkit-animation: cambio2 20s infinite;
+          animation: cambio2 20s infinite;
+}
+
+.li1 {
+  width: 40%;
+  list-style: none;
+}
+
+.img1 {
+  width: 60%;
+  border-radius: 40px;
+}
+
+@media (max-width: 1009px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
   .gustos {
+    width: 95%;
+    margin: auto;
     margin-top: 40px;
     display: grid;
     grid-template-areas: "vainilla flan " "dl dlg" "choco tramontana " "cookies cremacielo" "mascarpone frutilla" "bananita limon";
-    justify-items: stretch;
+    justify-items: center;
     gap: 20px;
   }
-  .bocha {
-    width: 75%;
+  .gustos .sabor {
+    width: 80%;
   }
   .flexgustos {
     display: flex;
@@ -223,14 +445,16 @@ footer {
   .division {
     padding: 30px;
   }
-  .suscripcion {
-    padding: 50px;
-    font-size: 75px;
-  }
 }
 @media (max-width: 715px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
   .gustos {
-    margin-top: 50px;
+    margin: auto;
     display: grid;
     justify-content: center;
     grid-template-areas: "vainilla" "flan " "dl" "dlg" "choco" "tramontana " "cookies" "cremacielo" "mascarpone" "frutilla" "bananita" "limon";
@@ -262,9 +486,6 @@ footer {
   .texto1 {
     padding: 10px;
   }
-  .foto1 {
-    width: 75%;
-  }
   .division {
     padding: 20px;
   }
@@ -272,4 +493,29 @@ footer {
     padding: 30px;
     font-size: 60px;
   }
+}
+.carusel-container {
+  height: 20%;
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 40px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto {
+  border-radius: 40px;
+}
+
+.nav-link {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.compania {
+  color: white;
 }
